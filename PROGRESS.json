@@ -13,6 +13,6 @@
     {"id":"T10","phase":"Build","title":"Contact page","status":"done"},
     {"id":"T11","phase":"Polish","title":"Responsive and accessibility check","status":"done"},
     {"id":"T12","phase":"Deploy","title":"GitHub Pages workflow","status":"done"},
-    {"id":"T13","phase":"Deploy","title":"Push to GitHub and go live","status":"todo"}
+    {"id":"T13","phase":"Deploy","title":"Push to GitHub and go live","status":"done"}
   ]
 }
