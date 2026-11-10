@@ -3,14 +3,14 @@
 
   // Mobile menu
   var menuBtn = document.querySelector('.menu-btn');
-  var links = document.getElementById('nav-links');
+  var nav = document.getElementById('site-nav');
+  function closeMenu() { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
   menuBtn.addEventListener('click', function () {
-    var open = links.classList.toggle('open');
+    var open = nav.classList.toggle('open');
     menuBtn.setAttribute('aria-expanded', String(open));
   });
-  links.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') { links.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
-  });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
 
   // Theme toggle
   document.querySelector('.theme-btn').addEventListener('click', function () {
@@ -22,20 +22,22 @@
   });
 
   // Print resume
-  document.querySelector('.print-btn').addEventListener('click', function () { window.print(); });
+  var printBtn = document.querySelector('.print-btn');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
 
-  // Section reveal
+  // Scroll reveal (content stays visible if JS or IntersectionObserver is missing)
   var items = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
       });
     }, { threshold: 0.08 });
     items.forEach(function (el) { io.observe(el); });
   } else {
-    items.forEach(function (el) { el.classList.add('is-visible'); });
+    items.forEach(function (el) { el.classList.add('in'); });
   }
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
 })();

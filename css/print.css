@@ -1,14 +1,9 @@
 @page { margin: 0.6in; }
-:root, :root[data-theme="dark"] {
-  --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --rule: #bbb; --accent: #1F3A5F; --brass: #6b5229;
-}
-body { font-size: 10.5pt; }
-.site-header, .skip, .cta, .print-btn, .theme-btn, .menu-btn, .site-footer, .hero .facts { display: none !important; }
+:root, :root[data-theme="dark"] { --bg: #fff; --surface: #fff; --text: #000; --text-muted: #333; --line: #bbb; --accent: #1d3a63; --shadow: none; }
+body { font-size: 10.5pt; background: #fff; }
+.site-header, .skip, .cta, .print-btn, .theme-btn, .menu-btn, .site-footer, .page-hero, .resume-actions { display: none !important; }
 .reveal { opacity: 1 !important; transform: none !important; }
-.hero { padding: 0 0 12pt; }
-.section { padding: 14pt 0; }
-h1 { font-size: 24pt; }
-h2 { font-size: 15pt; }
-.entry, .card, .resume-block { break-inside: avoid; }
-#work, #contact { display: none; }
-a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+.section { padding: 0; }
+.resume-sheet { border: 0; box-shadow: none; padding: 0; }
+.resume-sheet ul { margin-bottom: .6rem; }
+a { color: inherit; text-decoration: none; }
