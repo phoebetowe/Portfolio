@@ -38,6 +38,18 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // Header gains depth once the page scrolls
+  var header = document.querySelector('.site-header');
+  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 12); }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Photo slots: if an image file is not there yet, remove it so the fallback art shows
+  document.querySelectorAll('img[data-slot]').forEach(function (img) {
+    function drop() { img.remove(); }
+    img.addEventListener('error', drop);
+    if (img.complete && img.naturalWidth === 0) drop();
+  });
+
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 })();
