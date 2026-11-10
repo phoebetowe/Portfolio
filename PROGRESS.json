@@ -1,18 +1,137 @@
 {
-  "updated": "2026-11-10",
-  "tasks": [
-    {"id":"T01","phase":"Planning","title":"Design system plan (subagent)","status":"done"},
-    {"id":"T02","phase":"Planning","title":"Content and copy plan (subagent)","status":"done"},
-    {"id":"T03","phase":"Planning","title":"Tech and deployment plan (subagent)","status":"done"},
-    {"id":"T04","phase":"Build","title":"Navy design system and shared nav/footer","status":"done"},
-    {"id":"T05","phase":"Build","title":"Home page","status":"done"},
-    {"id":"T06","phase":"Build","title":"About page","status":"done"},
-    {"id":"T07","phase":"Build","title":"Experience page","status":"done"},
-    {"id":"T08","phase":"Build","title":"Resume page and PDF","status":"done"},
-    {"id":"T09","phase":"Build","title":"Projects page","status":"done"},
-    {"id":"T10","phase":"Build","title":"Contact page","status":"done"},
-    {"id":"T11","phase":"Polish","title":"Responsive and accessibility check","status":"done"},
-    {"id":"T12","phase":"Deploy","title":"GitHub Pages workflow","status":"done"},
-    {"id":"T13","phase":"Deploy","title":"Push to GitHub and go live","status":"done"}
-  ]
+ "updated": "2026-11-10",
+ "tasks": [
+  {
+   "id": "T01",
+   "phase": "Set up repository & structure",
+   "title": "Design system plan (subagent)",
+   "status": "done"
+  },
+  {
+   "id": "T02",
+   "phase": "Set up repository & structure",
+   "title": "Content and copy plan (subagent)",
+   "status": "done"
+  },
+  {
+   "id": "T03",
+   "phase": "Set up repository & structure",
+   "title": "Tech and deployment plan (subagent)",
+   "status": "done"
+  },
+  {
+   "id": "T04",
+   "phase": "Set up repository & structure",
+   "title": "Repository, folders and shared styles",
+   "status": "done"
+  },
+  {
+   "id": "T05",
+   "phase": "Build core pages",
+   "title": "Home page",
+   "status": "done"
+  },
+  {
+   "id": "T06",
+   "phase": "Build core pages",
+   "title": "About page",
+   "status": "done"
+  },
+  {
+   "id": "T07",
+   "phase": "Build core pages",
+   "title": "Experience page",
+   "status": "done"
+  },
+  {
+   "id": "T08",
+   "phase": "Build core pages",
+   "title": "Projects page",
+   "status": "done"
+  },
+  {
+   "id": "T09",
+   "phase": "Build core pages",
+   "title": "Contact page",
+   "status": "done"
+  },
+  {
+   "id": "T10",
+   "phase": "Add components & styling",
+   "title": "Navy design system, nav and footer",
+   "status": "done"
+  },
+  {
+   "id": "T11",
+   "phase": "Add components & styling",
+   "title": "Light and dark theme toggle",
+   "status": "done"
+  },
+  {
+   "id": "T12",
+   "phase": "Add components & styling",
+   "title": "Progress dashboard",
+   "status": "done"
+  },
+  {
+   "id": "T13",
+   "phase": "Integrate resume & assets",
+   "title": "Resume page",
+   "status": "done"
+  },
+  {
+   "id": "T14",
+   "phase": "Integrate resume & assets",
+   "title": "Resume PDF",
+   "status": "done"
+  },
+  {
+   "id": "T15",
+   "phase": "Integrate resume & assets",
+   "title": "Add your headshot",
+   "status": "todo"
+  },
+  {
+   "id": "T16",
+   "phase": "Test & refine",
+   "title": "Responsive check at desktop and phone widths",
+   "status": "done"
+  },
+  {
+   "id": "T17",
+   "phase": "Test & refine",
+   "title": "Contrast and accessibility audit",
+   "status": "todo"
+  },
+  {
+   "id": "T18",
+   "phase": "Test & refine",
+   "title": "Confirm GPA, dates and project details",
+   "status": "todo"
+  },
+  {
+   "id": "T19",
+   "phase": "Deploy",
+   "title": "GitHub Pages workflow",
+   "status": "done"
+  },
+  {
+   "id": "T20",
+   "phase": "Deploy",
+   "title": "Push to GitHub (main)",
+   "status": "done"
+  },
+  {
+   "id": "T21",
+   "phase": "Deploy",
+   "title": "Turn on Pages in repo settings",
+   "status": "todo"
+  },
+  {
+   "id": "T22",
+   "phase": "Final review",
+   "title": "Read every page and approve the copy",
+   "status": "todo"
+  }
+ ]
 }
